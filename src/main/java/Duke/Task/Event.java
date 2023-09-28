@@ -1,13 +1,9 @@
 package Duke.Task;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-
 public class Event extends Task {
-    protected LocalDate startDateTime;
-    protected LocalDate endDateTime;
-    public Event(String description, LocalDate startDateTime, LocalDate endDateTime) {
+    protected String startDateTime;
+    protected String endDateTime;
+    public Event(String description, String startDateTime, String endDateTime) {
         super(description);
         this.startDateTime = startDateTime;
         this.endDateTime = endDateTime;
